@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Vote</title>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Team Vote</h1>
+
+    <section id="pin-screen">
+      <label>
+        Enter your 4-digit PIN
+        <input id="pin" inputmode="numeric" maxlength="4" autocomplete="off">
+      </label>
+      <button id="verify">Continue</button>
+      <p id="pin-message"></p>
+    </section>
+
+    <section id="vote-screen" hidden>
+      <p id="voter-info"></p>
+
+      <label>
+        Vote for:
+        <select id="candidate"></select>
+      </label>
+
+      <button id="submit-vote">Submit Vote</button>
+      <p id="vote-message"></p>
+    </section>
+  </main>
+</body>
+</html>
